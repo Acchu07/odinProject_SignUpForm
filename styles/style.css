@@ -141,8 +141,12 @@ table {
 .background-image {
 	height: 100%;
 	background-image: url(../images/HappyCat.jpg);
-	background-size: cover;
+	background-size: 20%;
+	background-attachment: fixed;
+	position: relative;
 	width: 50vw;
+	overflow: hidden;
+	background-position: center center;
 }
 
 
@@ -174,6 +178,7 @@ fieldset {
 form > fieldset{
 	background-color: lightsteelblue;
 	padding: 10px;
+	box-shadow: 10px 20px 7px;
 }
 
 button{
@@ -193,6 +198,7 @@ input:valid{
 	border-radius: 15px;
 }
 
+
 input:invalid{
 	border: 3px red solid;
 }
@@ -209,12 +215,23 @@ img{
 .background{
     background-color: black;
     height: 18%;
+    width: 105%;
     opacity: .3;
+    position: absolute;
+    top: 0;
 }
 .background-image > p{
 		font-family: OdinProjectNord;
 		color: white;
 		position: absolute;
-		font-size: 120px;
+		font-size: 180px;
+		top: 0;
+		left: 38%;
 
+}
+
+footer{
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
 }
