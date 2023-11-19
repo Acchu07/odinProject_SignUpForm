@@ -5,42 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KatSwat</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <div>
-        <p>This is not a real online service. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi mollitia
-            dolor tenetur quidem optio in culpa possimus. Recusandae necessitatibus sapiente mollitia quidem? Nemo
-            debitis nesciunt totam dolorum quisquam possimus autem?</p>
-        <p>You Know You Want To</p>
-    </div>
-    <form action="" method="get">
-        <fieldset>
-            <legend>Name</legend>
-            <label for="FirstName">FIRST NAME</label>
-            <input type="text" id="FirstName" name="firstName" />
-
-            <label for="LastName">LAST NAME</label>
-            <input type="text" id="LastName" name="lastName">
-        </fieldset>
-        <fieldset>
-            <label for="EmailAddress">EMAIL</label>
-            <input type="email" id="EmailAddress" name="emailAddress">
-
-            <label for="PhoneNumber">PHONE NUMBER</label>
-            <input type="tel" id="PhoneNumber" name="phoneNumber" minlength="10" maxlength="10">
-        </fieldset>
-        <fieldset>
-            <label for="Password">PASSWORD</label>
-            <input type="password" id="Password" name="password">
-
-            <label for="ConfirmPassword">CONFIRM PASSWORD</label>
-            <input type="password" id="ConfirmPassword" name="confirmPassword">
-        </fieldset>
-    </form>
-    <button>Create Account</button>
-    <p>Already Have an Account? <a href=""> Log In</a></p>
-    <footer>PhotoBy <a href="https://unsplash.com/photos/brown-tabby-cat-7GX5aICb5i4">JaePark</a></footer>
+    <article>
+        <div class="background-image">
+            <img src="images/odin-lined.png" alt="Odin Logo">
+            <div class="background"></div>
+            <p>ODIN</p>
+        </div>
+    </article>
+    <article>
+        <div>
+            <p class="common-values">This is not a real online service. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+                mollitia
+                dolor tenetur quidem optio in culpa possimus. Recusandae necessitatibus sapiente mollitia quidem? Nemo
+                debitis nesciunt totam dolorum quisquam possimus autem?</p>
+                <p class="common-values">You <span>Know</span> You Want To</p>
+            </div>
+        <form action="" method="get">
+            <fieldset>
+                <label for="FirstName">*FIRST NAME</label>
+                <input type="text" id="FirstName" name="firstName" required/>
+                <label for="LastName">*LAST NAME</label>
+                <input type="text" id="LastName" name="lastName" required/>
+            </fieldset>
+            <fieldset>
+                <label for="EmailAddress">*EMAIL</label>
+                <input type="email" id="EmailAddress" name="emailAddress" required/>
+                <label for="PhoneNumber">*PHONE NUMBER</label>
+                <input type="tel" id="PhoneNumber" name="phoneNumber" minlength="10" maxlength="10" required/>
+            </fieldset>
+            <fieldset>
+                <label for="Password">*PASSWORD</label>
+                <input type="password" id="Password" name="password"required/>
+                <label for="ConfirmPassword">*CONFIRM PASSWORD</label>
+                <input type="password" id="ConfirmPassword" name="confirmPassword" required/>
+            </fieldset>
+            <button>Create Account</button>
+        </form>
+        <div>
+            <p class="common-values">Already Have an Account? <a href=""> Log In</a></p>
+        </div>
+        <footer>PhotoBy <a href="https://unsplash.com/photos/brown-tabby-cat-7GX5aICb5i4">JaePark</a></footer>
+    </article>
 </body>
 
 </html>
